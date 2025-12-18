@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeHolo 3D</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom Scrollbar for dark theme */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a1a1a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4a4a4a;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* 3D Card Specific Styles that are hard to do with pure Tailwind utilities */
+      .card-glare {
+        background: radial-gradient(
+          farthest-corner circle at var(--pointer-x) var(--pointer-y),
+          rgba(255, 255, 255, 0.8) 10%,
+          rgba(255, 255, 255, 0.65) 20%,
+          rgba(0, 0, 0, 0.5) 90%
+        );
+        mix-blend-mode: overlay;
+        opacity: var(--card-opacity);
+      }
+
+      .card-holo {
+        background: linear-gradient(
+          135deg,
+          transparent 0%,
+          rgba(255, 219, 112, 0.3) 30%,
+          rgba(255, 100, 100, 0.3) 50%,
+          rgba(100, 200, 255, 0.3) 70%,
+          transparent 100%
+        );
+        background-position: var(--bg-x) var(--bg-y);
+        background-size: 200% 200%;
+        mix-blend-mode: color-dodge;
+        opacity: var(--card-opacity);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-neutral-950 text-white antialiased overflow-x-hidden">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
