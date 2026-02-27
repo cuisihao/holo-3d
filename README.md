@@ -22,3 +22,6 @@ View your app in AI Studio: https://ai.studio/apps/temp/1
 <img width="1200" height="475" alt="GHBanner" src="https://cdn.skyimg.net/up/2026/2/27/72005d1e.webp" />
 <img width="1200" height="475" alt="GHBanner" src="https://cdn.skyimg.net/up/2026/2/27/724820f0.webp" />
 <img width="1200" height="475" alt="GHBanner" src="https://cdn.skyimg.net/up/2026/2/27/5546e6a2.webp" />
+
+## preview URL
+https://holo-3d-1zrwhac96-cusihaos-projects.vercel.app
