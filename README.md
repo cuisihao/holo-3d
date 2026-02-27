@@ -12,6 +12,11 @@ View your app in AI Studio: https://ai.studio/apps/temp/1
 
 **Prerequisites:**  Node.js
 
+## view
+<img width="1200" height="475" alt="GHBanner" src="https://cdn.skyimg.net/up/2026/2/27/72005d1e.webp" />
+<img width="1200" height="475" alt="GHBanner" src="https://cdn.skyimg.net/up/2026/2/27/5546e6a2.webp" />
+
+
 
 1. Install dependencies:
    `npm install`
